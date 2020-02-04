@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+         <referenceBlock name="content">
+            <block class="Makarovsoft\Directaddto\Block\Conf" name="directaddto_conf" before="-" template="Makarovsoft_Directaddto::conf.phtml"/>
+        </referenceBlock>
+        <referenceBlock name="addtocart">			
+			<arguments>
+				<argument name="template" xsi:type="string">Makarovsoft_Directaddto::addtocart.phtml</argument>
+			</arguments>
+        </referenceBlock>
+        <referenceBlock name="product.info.addtocart">
+            <block class="Makarovsoft\Directaddto\Block\Checkout" name="directaddto_check" before="-" template="Makarovsoft_Directaddto::checkout.phtml"/>
+        </referenceBlock>
+        <referenceBlock name="product.info.addtocart.additional">
+            <block class="Makarovsoft\Directaddto\Block\Checkout" name="directaddto_check.additional" before="-" template="Makarovsoft_Directaddto::checkout.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

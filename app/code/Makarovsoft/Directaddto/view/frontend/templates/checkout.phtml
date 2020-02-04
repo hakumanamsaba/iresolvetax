@@ -1,0 +1,18 @@
+<?php
+/* @var $this \Makarovsoft\Directaddto\Block\Checkout */
+?>
+<?php if ($this->isEnabled()):?>
+		<span class="multicheckout">
+            <button type="button"
+                    title="<?php /* @escapeNotVerified */ echo __('Proceed to Checkout') ?>"
+                    class="action primary mascartdirect-tocheckout-link"
+                    style="float: right;"
+                    data-link="<?php echo $this->getCheckoutLink()?>"
+                    data-url="<?php echo $this->getCheckoutLink()?>"
+                    onclick="window.location=jQuery(this).data('url');">
+                <span><?php /* @escapeNotVerified */ echo __('Proceed to Checkout') ?></span>
+            </button>
+		</span>
+
+<div style="clear:both;">    </div>
+<?php endif;?>

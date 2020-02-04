@@ -1,0 +1,68 @@
+<?php
+/* @var $this \Makarovsoft\Directaddto\Block\Conf */
+?>
+<div class="message info empty">
+    <?php echo __('To get direct add to cart or checkout link to specific configuration of this product select configuration of this product and copy appropriate link below')?><br />
+    <br />
+
+    <button type="button" class="copy-action" id="mascartdirect-cart-link" data-link="<?php echo $this->getCartLink()?>" data-text=""
+            style="padding: 3px 12px;"><span><?php echo __('Copy Link To Cart');?></span>
+    </button>
+
+    <button type="button" class="copy-action" id="mascartdirect-checkout-link" data-link="<?php echo $this->getCheckoutLink()?>" data-text=""
+            style="padding: 3px 12px;">
+        <span><?php echo __('Copy Link To Checkout');?></span>
+    </button>
+
+    <br />
+    <span id="copiedStat"></span>
+</div>
+<script>
+    requirejs.config({
+        appDir: '.',
+        paths: {
+            'clipboard': ['https://cdn.jsdelivr.net/clipboard.js/1.5.12/clipboard.min']
+        }
+    });
+
+    require(['clipboard'], function(Clipboard) {
+        var clipboard = new Clipboard('.copy-action',
+            {
+                text: function(trigger) {
+                    showLinksToProducts('cart');
+                    showLinksToProducts('checkout');
+                    return jQuery(trigger).data('text');
+                }
+            }
+        );
+
+        clipboard.on('success', function(e) {
+            document.getElementById('copiedStat').innerHTML = '<?php echo __("Copied!");?>';
+            setTimeout("document.getElementById('copiedStat').innerHTML = '';", 2000);
+        });
+    });
+
+    function getProductFormValues()
+    {
+        var form = jQuery('#product_addtocart_form');
+        return form.serialize();
+    }
+    function showLinksToProducts(el)
+    {
+        var values = getProductFormValues();
+        var el = jQuery('#mascartdirect-' + el + '-link');
+
+        el.data('text', el.data('link') + '?' + values);
+
+        return false;
+    }
+
+    require(
+        ['jquery'],
+        function(jQuery) {
+            setTimeout("jQuery('#product_addtocart_form .swatch-option').click(function () {showLinksToProducts('cart');showLinksToProducts('checkout');});", 3000);
+        }
+    );
+
+
+</script>

@@ -1,0 +1,671 @@
+<div class="form-container">
+    <form action="<?php echo $block->getBaseUrl().'dbainfo/index/save'; ?>" role="form">
+        <input id='step2' type='checkbox'>
+        <input id='step3' type='checkbox'>
+
+
+        <div id="part1" class="form-group">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">DBA INFORMATION </h3>
+                    <div class="text-imput">Client Information</div>
+
+                </div>
+                <!-- Here is the form -->
+
+                <div class="row">
+
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">First Name</div>
+                                <input type="text"  name="dbaFirstname"  placeholder="Company First Name" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">Middle</div>
+                                <input type="text"  name="dbaMiddle"  placeholder="Company Middle" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">Last Name</div>
+                                <input type="text"  name="dbaLastname"  placeholder="Company Last Name" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/ end of the row -->
+
+
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">Address</div>
+                                <input type="text" name="dbaAddress"  placeholder="Address" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <div class="wrap-field">
+
+                            </div>
+                        </div>
+                    </div>
+                </div><!--// end row -->
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">City</div>
+                                <input type="text"  name="dbaCity"  placeholder="City" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">State</div>
+                                <input type="text" name="dbaState"  placeholder="State" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">Zip Code</div>
+                                <input type="text" name="dbaZip"  placeholder="Zip Code" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                </div><!--// end row -->
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">Day Phone</div>
+                                <input type="text"  name="dbaPhone"  placeholder="Phone" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">Cell Phone</div>
+                                <input type="text" name="dbaCell"  placeholder="Cell Phone" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            <div class="wrap-field">
+                                <div class="text-imput">E-mail</div>
+                                <input type="text" name="dbaEmail"  placeholder="Email" class="form-control valid only_character js-upper-first required">
+                            </div>
+                        </div>
+                    </div>
+                </div><!--// end row -->
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="customer-info">
+                            The contact address is the primary address used for the delivery of any documents or products related to your order.
+                            This address is used for internal purposes only and will not be shared with any third parties or other outside agencies unless provided in any subsequent pages of the order process which require the intake of an address.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                    <label for='step2' id="continue-step2" class="continue">
+                        <div class="btn btn-default btn-success btn-lg">Continue</div>
+                    </label>
+                </div>
+
+
+
+            </div><!---// end panel -->
+        </div><!---// end part1  -->
+        <!--/start the second from ************************************************************************************************************  Business Formation Client Questionnaire  ******************************************************-->
+        <div id="part2" class="form-group">
+
+            <div class="panel-heading">
+                <h3 class="panel-title">OWNER(S) INFORMATION </h3>
+                <div class="text-imput">Information </div>
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">First Name</div>
+                            <input type="text"  name="dbaOFirstname"  placeholder="Company First Name" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Middle</div>
+                            <input type="text"  name="dbaOMiddle"  placeholder="Company Middle" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Last Name</div>
+                            <input type="text"  name="dbaOLastname"  placeholder="Company Last Name" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+            </div><!--/ end of the row -->
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Address</div>
+                            <input type="text" name="dbaOAddress"  placeholder="Address" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="wrap-field">
+
+                        </div>
+                    </div>
+                </div>
+            </div><!--// end row -->
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">City</div>
+                            <input type="text"  name="dbaOCity"  placeholder="City" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">State</div>
+                            <input type="text" name="dbaOState"  placeholder="State" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Zip Code</div>
+                            <input type="text" name="dbaOZip"  placeholder="Zip Code" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+            </div><!--// end row -->
+
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Day Phone</div>
+                            <input type="text"  name="dbaOPhone"  placeholder="Phone" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Cell Phone</div>
+                            <input type="text" name="dbaOCell"  placeholder="Cell Phone" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">E-mail</div>
+                            <input type="text" name="dbaOEmail"  placeholder="Email" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+            </div><!--// end row -->
+
+            <div class="panel-heading">
+                <h3 class="panel-title">OWNER(S) INFORMATION </h3>
+                <div class="text-imput">Information </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">First Name</div>
+                            <input type="text"  name="dbaOFirstname2"  placeholder="Company First Name" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Middle</div>
+                            <input type="text"  name="dbaOMiddle2"  placeholder="Company Middle" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Last Name</div>
+                            <input type="text"  name="dbaOLastname2"  placeholder="Company Last Name" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+            </div><!--/ end of the row -->
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Address</div>
+                            <input type="text" name="dbaOAddress2"  placeholder="Address" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="wrap-field">
+
+                        </div>
+                    </div>
+                </div>
+            </div><!--// end row -->
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">City</div>
+                            <input type="text"  name="dbaOCity2"  placeholder="City" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">State</div>
+                            <input type="text" name="dbaOState2"  placeholder="State" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Zip Code</div>
+                            <input type="text" name="dbaOZip2"  placeholder="Zip Code" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+            </div><!--// end row -->
+
+
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Day Phone</div>
+                            <input type="text"  name="dbaOPhone2"  placeholder="Phone" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Cell Phone</div>
+                            <input type="text" name="dbaOCell2"  placeholder="Cell Phone" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">E-mail</div>
+                            <input type="text" name="dbaOEmail2"  placeholder="Email" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+            </div><!--// end row -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="customer-info">
+                        The contact address is the primary address used for the delivery of any documents or products related to your order.
+                        This address is used for internal purposes only and will not be shared with any third parties or other outside agencies unless provided in any subsequent pages of the order process which require the intake of an address.
+                    </div>
+                </div>
+            </div>
+            <!--/end of the form -->
+            <div class="btn-group btn-group-lg btn-group-justified" role="group" aria-label="...">
+                <label for='step2' id="back-step2" class="back">
+                    <div class="btn btn-default btn-primary btn-lg" role="button">Back</div>
+                </label>
+                <label for='step3' id="continue-step3" class="continue">
+                    <div class="btn btn-default btn-success btn-lg" role="button">Continue</div>
+                </label>
+            </div>
+
+        </div>
+
+        <div id="part3" class="form-group">
+            <div class="panel-heading">
+                <h3 class="panel-title">PROPOSED NAME  FOR DBA</h3>
+                <div class="text-imput">Information </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <ul style="list-style: none; ">
+
+                                <li>
+                                    <!-- Material unchecked -->
+                                    <div class="text-imput">Option 1</div>
+                                    <input type="text" name="dbaBusiness1"  placeholder="Business Name" class="form-control valid only_character js-upper-first required">
+                                </li>
+                                <li>
+                                    <!-- Material unchecked -->
+                                    <div class="text-imput">Option 2</div>
+                                        <input type="text" name="dbaBusiness2"  placeholder="Business Name" class="form-control valid only_character js-upper-first required">
+
+
+                                </li>
+                                <li>
+                                    <!-- Material unchecked -->
+                                    <div class="text-imput">Option 3</div>
+                                        <input type="text" name="dbaBusiness3"  placeholder="Business Name" class="form-control valid only_character js-upper-first required">
+
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!--// end row -->
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Address</div>
+                            <input type="text" name="dbaBAddressB"  placeholder="Address" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Start Date (00/00/0000)</div>
+                            <input type="text" name="startDate"  placeholder="Start Date" class="form-control valid only_character js-upper-first required">
+                        </div>
+                    </div>
+                </div>
+            </div><!--// end row -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <div class="wrap-field">
+                            <div class="text-imput">Description of Business</div>
+                            <textarea name="content" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="customer-info">
+                        The contact address is the primary address used for the delivery of any documents or products related to your order.
+                        This address is used for internal purposes only and will not be shared with any third parties or other outside agencies unless provided in any subsequent pages of the order process which require the intake of an address.
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-group btn-group-lg" role="group" aria-label="...">
+                <label for='step3' id="back-step3" class="back">
+                    <div class="btn btn-default btn-primary btn-lg">Back</div>
+                </label>
+
+
+
+                <label class="continue">
+                    <button type="submit" class="btn btn-default btn-success buttonprimary">Submit</button>
+                </label>
+            </div>
+
+        </div>
+
+
+
+    </form>
+</div>
+
+<style>
+    /*form styles*/
+    .form-container {
+        width: 100%;
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+    .form-container input[type=text], .form-container input[type=email], .form-container input[type=phone], .form-container input[type=number], .form-container textarea {
+        width: 95%;
+        margin: 10px 10px;
+        border: 1px solid #fffdfd;
+        box-shadow: 0 0 1px 1px #d6cfcf;
+        text-align: left;
+    }
+    .panel-title{
+        color: #31aeef;
+        font-weight: 600;
+        text-align: left;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+    .text-imput{
+        text-align: left;
+        margin-left: 28px;
+        font-weight: 500;
+        color: #000;
+    }
+    .form-container textarea {
+        min-height: 150px;
+    }
+    .form-container .panel {
+        background: #f9f9f9;
+        padding: 10px;
+        border-radius: 12px;
+        padding-bottom: 75px;
+    }
+    .customer-info{
+        background: #feffa9ad;
+        padding: 10px;
+        border-radius: 12px;
+        color: #083f65;
+        text-align: left;
+        margin: 20px;
+    }
+    .buttonprimary {
+        border: 1px solid #ea3c00 !important;
+        color: #fff !important;
+        font-weight: 700;
+        line-height: 30px !important;
+        padding: 0 12px !important;
+        height: 45px !important;
+        background-color: #ff5216 !important;
+    }
+    .form-container .panel .panel-heading {
+        margin-bottom: 20px;
+    }
+    .form-container .btn-group {
+        width: 90%;
+        margin: 0 auto 10px auto;
+    }
+    .form-container .back {
+        float: left;
+    }
+    .form-container .continue {
+        float: right;
+    }
+    /* Multi-Part CSS */
+    input[type=checkbox] {
+        position: absolute;
+        /* Position the checkbox in upper left corner */
+        opacity: 0;
+    }
+    /* Styling Parts */
+    #part1,
+    #part2,
+    #part3 {
+        z-index: 2;
+        display: block;
+        height: auto;
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+    /* Hidden Parts */
+    #part2,
+    #part3 {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+    /* Show Step 2 & Hide Step 1 */
+    #step2:checked ~ #part2 {
+        opacity: 1;
+        height: auto;
+    }
+    #step2:checked ~ #part1 {
+        opacity: 0;
+        height: 0;
+        display: none;
+    }
+    /* Show Step 3  & Hide Step 2 */
+    #step3:checked ~ #part3 {
+        opacity: 1;
+        height: auto;
+    }
+    #step3:checked ~ #part2 {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    /* The container */
+    .containercheck {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 14px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #000;
+    }
+
+    /* Hide the browser's default checkbox */
+    .containercheck input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: #d2e0e2;
+        /* border: 1px solid #999999; */
+    }
+
+    /* On mouse-over, add a grey background color */
+    .containercheck:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .containercheck input:checked ~ .checkmark {
+        background-color: #2196F3;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .containercheck input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .containercheck .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    div.wrap-field ul {
+        list-style-type: none;
+    }
+
+
+</style>
