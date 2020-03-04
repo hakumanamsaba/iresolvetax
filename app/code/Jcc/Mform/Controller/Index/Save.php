@@ -34,10 +34,32 @@ class Save extends \Magento\Framework\App\Action\Action
         if($mform->save()){
             $this->messageManager->addSuccessMessage(__('You saved the data.'));
         }else{
-            $this->messageManager->addErrorMessage(__('Data was not saved.'));
+            $this->messageManager->addErrorMessage(__('Data was not saved. Contact Customer Service'));
         }
         $resultRedirect = $this->resultRedirectFactory->create();
-        $resultRedirect->setPath('mform/index/index');
+        $resultRedirect->setPath('mascartdirect/direct/add?id=2');
         return $resultRedirect;
     }
+
+
+
+    public function savercorporation()
+    {
+
+        $data = $this->getRequest()->getParams();
+        $mform = $this->_mform->create();
+        $mform->setData($data);
+        if($mform->save()){
+            $this->messageManager->addSuccessMessage(__('You saved the data.'));
+        }else{
+            $this->messageManager->addErrorMessage(__('Data was not saved. Contact Customer Service'));
+        }
+        $resultRedirect = $this->resultRedirectFactory->create();
+        $resultRedirect->setPath('mascartdirect/direct/add?id=3');
+        return $resultRedirect;
+    }
+
+
+
+
 }

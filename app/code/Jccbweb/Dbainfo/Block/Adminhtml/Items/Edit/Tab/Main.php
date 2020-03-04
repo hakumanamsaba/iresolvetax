@@ -260,9 +260,9 @@ class Main extends Generic implements TabInterface
         );
 
         $fieldset->addField(
-            'dbaAddressB',
+            'dbaBAddressB',
             'text',
-            ['name' => 'dbaAddressB', 'label' => __('Address B'), 'title' => __('Address B'), 'required' => true]
+            ['name' => 'dbaBAddressB', 'label' => __('Address B'), 'title' => __('Address B'), 'required' => true]
         );
         $fieldset->addField(
             'startDate',

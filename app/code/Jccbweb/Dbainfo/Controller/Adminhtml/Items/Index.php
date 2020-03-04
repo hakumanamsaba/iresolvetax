@@ -21,7 +21,7 @@ class Index extends \Jccbweb\Dbainfo\Controller\Adminhtml\Items
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
         $resultPage->setActiveMenu('Jccbweb_Dbainfo::test');
-        $resultPage->getConfig()->getTitle()->prepend(__('Test Items'));
+        $resultPage->getConfig()->getTitle()->prepend(__('DBA Items'));
         $resultPage->addBreadcrumb(__('Test'), __('Test'));
         $resultPage->addBreadcrumb(__('Items'), __('Items'));
         return $resultPage;

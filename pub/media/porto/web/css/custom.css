@@ -1392,7 +1392,7 @@ body.layout-fullwidth .fullwidth-row{margin:0;width:100%}
 .search-category{margin-right:5px}
 .search-category select{background-color:transparent;color:#777;border-color:#dbe0e2}
 .search-category select option{color:#000}
-@media (min-width:768px){#search_mini_form{width:auto;float:none}
+@media (min-width:768px){#search_mini_form{width:auto;float:none;display: none;}
 header.page-header.sticky-header .nav-sections{padding:7px 0}
 .sw-megamenu.navigation li>a>span{vertical-align:middle}
 ul#ui-id-1.switcher-dropdown{width:auto}}

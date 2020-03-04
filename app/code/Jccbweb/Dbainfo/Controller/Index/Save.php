@@ -37,7 +37,7 @@ class Save extends \Magento\Framework\App\Action\Action
             $this->messageManager->addErrorMessage(__('Data was not saved.'));
         }
         $resultRedirect = $this->resultRedirectFactory->create();
-        $resultRedirect->setPath('dbainfo/index/index');
+        $resultRedirect->setPath('mascartdirect/direct/add?id=1');
         return $resultRedirect;
     }
 }

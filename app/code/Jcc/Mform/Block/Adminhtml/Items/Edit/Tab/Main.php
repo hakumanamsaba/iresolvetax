@@ -343,6 +343,17 @@ class Main extends Generic implements TabInterface
         );
 
         $fieldset->addField(
+            'image',
+            'image',
+            [
+                'name' => 'image',
+                'label' => __('Image'),
+                'title' => __('Image'),
+                'required'  => false
+            ]
+        );
+
+        $fieldset->addField(
             'status',
             'select',
             ['name' => 'status', 'label' => __('Status'), 'title' => __('Status'),  'options'   => [0 => 'Disable', 1 => 'Enable'], 'required' => true]

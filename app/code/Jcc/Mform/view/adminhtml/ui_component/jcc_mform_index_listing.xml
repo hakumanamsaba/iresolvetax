@@ -212,7 +212,7 @@
                 </item>
             </argument>
         </column>
-        <column name="title">
+        <column name="Btype">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="editor" xsi:type="array">
@@ -222,11 +222,12 @@
                         </item>
                     </item>
                     <item name="filter" xsi:type="string">text</item>
-                    <item name="label" xsi:type="string" translate="true">Title</item>
+                    <item name="label" xsi:type="string" translate="true">Type</item>
                 </item>
             </argument>
         </column>
-        <column name="author">
+
+        <column name="Firstname">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="editor" xsi:type="array">
@@ -236,11 +237,60 @@
                         </item>
                     </item>
                     <item name="filter" xsi:type="string">text</item>
-                    <item name="label" xsi:type="string" translate="true">Author</item>
+                    <item name="label" xsi:type="string" translate="true">FirstName</item>
                 </item>
             </argument>
         </column>
-        <column name="image" class="Jcc\Mform\Ui\Component\Listing\Column\Thumbnail">
+
+
+
+        <column name="Lastname">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="editor" xsi:type="array">
+                        <item name="editorType" xsi:type="string">text</item>
+                        <item name="validation" xsi:type="array">
+                            <item name="required-entry" xsi:type="boolean">true</item>
+                        </item>
+                    </item>
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="label" xsi:type="string" translate="true">Lastname</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="address">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="editor" xsi:type="array">
+                        <item name="editorType" xsi:type="string">text</item>
+                        <item name="validation" xsi:type="array">
+                            <item name="required-entry" xsi:type="boolean">true</item>
+                        </item>
+                    </item>
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="label" xsi:type="string" translate="true">Address</item>
+                </item>
+            </argument>
+        </column>
+
+        <column name="contactPhone">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="editor" xsi:type="array">
+                        <item name="editorType" xsi:type="string">text</item>
+                        <item name="validation" xsi:type="array">
+                            <item name="required-entry" xsi:type="boolean">true</item>
+                        </item>
+                    </item>
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="label" xsi:type="string" translate="true">Phone</item>
+                </item>
+            </argument>
+        </column>
+
+
+        <!--<column name="image" class="Jcc\Mform\Ui\Component\Listing\Column\Thumbnail">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/thumbnail</item>
@@ -249,7 +299,7 @@
                     <item name="label" xsi:type="string" translate="true">Image</item>
                 </item>
             </argument>
-        </column>
+        </column> -->
         <column name="status">
             <argument name="data" xsi:type="array">
                 <item name="options" xsi:type="object">Jcc\Mform\Model\Source\Status</item>
